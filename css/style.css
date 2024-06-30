@@ -4,11 +4,24 @@ padding: 0;
 box-sizing: border-box;
 font-size: 17px;
 }
+img{
+ width: 100%;  
+}
+h1{font-size: 70px;
+}
+h2{font-size: 40px;
+}
+h3{
+    font-size: 30px;
+
+}
 .container{
     width: 90%;
     margin: auto;
 }
-
+section{
+    padding: 50px 0;
+}
 header{
     background-image: url(../image/dawn.jpg) ;
     background-repeat:no-repeat ;
@@ -59,14 +72,14 @@ nav ul li a{
     margin: 0 0 10px 0;
 }
 .banner span {
-    background-color: red;
+   background-color: red;
     height: 5px;
     width: 160px;
     display: inline-block;
     border-radius: 5px;
 }
 .banner h1 {
-    font-size: 70px;
+    
 
 }
 .banner button{
@@ -88,3 +101,134 @@ nav ul li a{
     border: 1px solid rgb(160, 53, 53) ;
     border-radius: 30px;
    }
+   /* UPCOMING EVENTS */
+   .event-main{
+    text-align: center;
+   }
+   .event-main h2{
+    margin: 0;
+    font-size: 40px;
+   }
+   .event-main span{
+    background-color:red;
+    height: 5px;
+    width: 160px;
+    display: inline-block;
+    border-radius: 10px;
+     margin: 10px 0 50px 0 ;
+   }
+   .event{
+    display: flex;
+    width: 80%;
+    margin: auto;
+   }
+   .event-box{
+width: 50%;
+margin: 10px;
+   }
+  .event-box img{
+    height: 350px;
+    object-fit: cover;
+    border-radius:  10px;
+box-shadow: rgba(0, 0, 0, 0.15) 12.95px 12.95px 2.6px;
+  }
+  .event-box h4{
+    font-size: 20px;
+    margin: 25px 0 20px 0;
+  }
+  .event-box p{}
+  .event-box a{
+    color: red;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 20px;  }
+/*EXPLORE THE WORLD*/
+.explore-section{
+    background-image: url(../image/father.jpg) ;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+     background-color:skyblue;
+    background-blend-mode: multiply;
+    color: white;
+    background-attachment: fixed;
+}
+
+.explore-main{
+    display: flex;
+    padding: 50px 0;
+}
+.explore{width: 50%; }
+.explore h1{margin-bottom: 0;
+}
+.explore span{
+    background-color:red;
+    height: 5px;
+    width: 160px;
+    display: inline-block;
+    border-radius: 10px;
+     margin: 10px 0 50px 0 ;
+}
+
+.explore p{
+    margin: 30px 0;
+    font-size: 20px ;
+}
+.explore a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+/*==tour and destination===*/
+.tours-main{
+    display: flex;
+}
+
+.tour{
+    padding: 14px;
+}
+.tour h3{
+    margin: 0;
+}
+.tour span{
+    background-color:red;
+    height: 5px;
+    width: 160px;
+    display: inline-block;
+    border-radius: 10px;
+     margin: 10px 0 50px 0;
+}
+.tour p{ margin: 30px 0; }
+.tour a{
+    color: rgb(79, 79, 235);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.tour img{
+
+}
+.small{
+    height: 300px;
+    object-fit: cover;
+    margin: 0 0 20px 0;
+}
+.large{ 
+    height: 370px;
+    object-fit: cover;
+    margin: 0 0 20px 0;
+}
+/* footer*/
+footer{
+    background-color: rgb(27, 20, 20);
+    color: white;
+    padding: 60px 0;
+    text-align: center;}
+    .fab{
+        font-size: 40px;
+        color: white;
+        margin: 10px;
+    }
