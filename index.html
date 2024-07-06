@@ -6,23 +6,21 @@
    <link rel="shortcut icon" href="./image/dawn.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <title>OUTDOOR ADVENTURE by n242-1</title>
-    
+
 </head>
 
 <body>
-    
-</body>
 <header>
 <nav class="container">
     <div>
         <h4>OUTDOOR<br> <span>ADVENTURE</span></h4>
     </div>
     <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Take action</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="#event">Event</a></li>
+        <li><a href="#take action">Take action</a></li>
     </ul>
 </nav>
 <!--banner section-->
@@ -35,7 +33,7 @@
 </div>
 </header>
 <!--UPCOMING EVENTS section-->
-<section class="event-main">
+<section id="event" class="event-main">
     <div class="container">
      <h2>UPCOMING EVENTS</h2> 
      <span></span>
@@ -49,7 +47,7 @@
                  <a href="#">Learn More</a>
            </div>
            <div class="event-box">
-            <img src="./image/woman.jpg" alt="">
+            <img class="event-image-mobile" src="./image/woman.jpg" alt="">
             <h4>WALKING HOLIDAYS</h4>
             <p>Come text will be go here.
                 This is a section of writing.I like this section.
@@ -78,7 +76,7 @@
     </div>
 </Section>
 <!--tour and destination-->
-<section>
+<section id="take action">
     <div class="container">
 <div class="tours-main">
 <div class="tour">
@@ -101,7 +99,8 @@
     </div>
     </div>
 </section>
-
+<!-- scrooll to top to back -->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="far fa-arrow-up"></i></button>
 <footer>
     <div class="container">
         <div>
@@ -117,6 +116,28 @@
  crossorigin="anonymous"></script>
     </div>
 </footer>
-
+<script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    
 </body>
 </html>l
+

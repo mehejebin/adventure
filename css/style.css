@@ -1,7 +1,15 @@
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
 body{
 margin: 0;
 padding: 0;
-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+        box-sizing: border-box;
 font-size: 17px;
 }
 img{
@@ -31,12 +39,16 @@ header{
     background-blend-mode: multiply;
 }
 nav{
-    position: fixed;
-    left: 0;
-    right: 0;
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 nav h4{
 color: white;
@@ -49,6 +61,8 @@ nav ul{
     margin: 0;
     padding: 0;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 nav ul li{
@@ -90,6 +104,8 @@ nav ul li a{
     letter-spacing: 2px;
     border: 1px solid rgb(160, 53, 53) ;
     border-radius: 30px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
 .banner button:hover{
@@ -118,6 +134,8 @@ nav ul li a{
      margin: 10px 0 50px 0 ;
    }
    .event{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 80%;
     margin: auto;
@@ -128,9 +146,11 @@ margin: 10px;
    }
   .event-box img{
     height: 350px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius:  10px;
-box-shadow: rgba(0, 0, 0, 0.15) 12.95px 12.95px 2.6px;
+-webkit-box-shadow: rgba(0, 0, 0, 0.15) 12.95px 12.95px 2.6px;
+        box-shadow: rgba(0, 0, 0, 0.15) 12.95px 12.95px 2.6px;
   }
   .event-box h4{
     font-size: 20px;
@@ -155,6 +175,8 @@ box-shadow: rgba(0, 0, 0, 0.15) 12.95px 12.95px 2.6px;
 }
 
 .explore-main{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 50px 0;
 }
@@ -184,6 +206,8 @@ box-shadow: rgba(0, 0, 0, 0.15) 12.95px 12.95px 2.6px;
 
 /*==tour and destination===*/
 .tours-main{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -213,14 +237,35 @@ box-shadow: rgba(0, 0, 0, 0.15) 12.95px 12.95px 2.6px;
 }
 .small{
     height: 300px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     margin: 0 0 20px 0;
 }
 .large{ 
     height: 370px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     margin: 0 0 20px 0;
 }
+/* scroll bar top back button */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;}
 /* footer*/
 footer{
     background-color: rgb(27, 20, 20);
@@ -232,3 +277,295 @@ footer{
         color: white;
         margin: 10px;
     }
+
+
+    /*====scrool bar start====*/
+    /* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 4px rgba(27, 20, 20, 0.466);
+            box-shadow: inset 0 0 4px rgba(27, 20, 20, 0.466); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, 0.719); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(128, 128, 128, 0.548) ; 
+  }
+  /*====scrool bar end====*/
+
+
+  /*  small phone,medium phone and large phone=0=>  600px and down */
+@media only screen and (max-width: 600px) {
+    
+    h1{font-size: 30px;
+    }
+    h2{font-size: 25px;
+    }
+    h3{
+        font-size: 20px;
+    
+    }
+    .container{
+        width: 90%;
+       
+    }
+    section{
+        padding: 50px 0;
+    }
+    header{
+       
+    }
+    nav{
+    display: block;    
+    }
+    nav h4{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 0 0 0;
+    }
+    nav h4 span{
+        width: 100%;
+    }
+    nav ul{
+        padding: 0;
+        justify-content: center;
+        display: flex;
+    }
+    nav ul li{
+         margin: 0 5px 10px 5px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+    .banner{
+        padding: 60px 0 70px;
+        text-align: center;
+        color: white;
+    }
+    .banner h3{
+        font-style: italic ;
+        margin: 0 0 10px 0;
+    }
+    .banner span {
+        height: 3px;
+        width: 120px;
+        display: inline-block;
+        border-radius: 10px;
+    }
+    
+    .banner button{
+        padding: 12px 20px;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    
+       /* UPCOMING EVENTS */
+       .event-main{
+        text-align: center;
+       }
+       
+       .event{
+        display: block;
+        width: 95%;
+        margin: 30px auto 0px ;
+       }
+       .event-box{
+    width: 95%;
+    margin: 0px auto;
+       }
+      .event-box img{
+        height: 300px;
+      }
+    
+      .event-box a{
+        display: block;
+      margin: 50px 0; }
+    .event-image-mobile{
+      margin-top: 50px;  
+    }
+
+    /*EXPLORE THE WORLD*/
+    
+    .explore-main{
+        display: block;
+        
+    }
+    .explore{width: 100%;
+     }
+    
+    .explore p{
+        margin: 30px 0;
+    }
+    .explore a{
+        font-size: 18px; 
+        
+    }
+    
+    /*==tour and destination===*/
+    .tours-main{
+        display: block;
+    }
+    
+    .tour{
+        padding: 10px;
+    }
+    .tour p{ 
+        margin: 20px 0; }
+    
+    .tour img{}
+
+    .small{
+        height: 300px;
+        margin: 0 0 10px 0;
+    }
+    .large{ 
+        height: 300px;
+        margin: 0 0 20px 0;
+    }
+    /* footer*/
+    footer{
+        
+        padding: 30px 10px;
+        text-align: center;}
+        .fab{
+            font-size: 20px;
+            margin: 5px;
+
+}
+  }
+/* tab device media query */
+@media  only screen and ( min-width:601px)  and ( max-width:768px){
+    h1{font-size: 40px;
+    }
+    h2{font-size: 30px;
+    }
+    h3{
+        font-size: 25px;
+    
+    }
+    .container{
+        width: 96%;
+    
+    }
+    section{
+        padding: 60px 0;
+    }
+    nav h4{
+         margin: 0;
+        font-size: 24px;
+        text-align: center;
+        padding: 15px;
+        }
+        nav ul{
+            padding: 0;
+            justify-content: center;
+            display: flex;
+        }
+        nav ul li{
+             margin: 0 15px 10px 5px;
+        }
+        nav ul li a{
+            font-size: 17px;
+        }
+        .banner{
+            padding:100px 0 110px;
+            text-align: center;
+            color: white;
+        }
+        
+        .banner span {
+            height: 4px;
+            width: 140px;
+            
+        }
+        
+        .banner button{
+            padding: 12px 30px;
+            letter-spacing: 2px;
+        }
+    /* upcoming event */
+           
+           .event{ 
+            width: 90%;
+            margin: 30px auto 0;
+           }
+           .event-box{
+        width: 95%;
+        margin: 15px;
+           }
+           /*EXPLORE THE WORLD*/
+           
+           .explore-main{
+               display: block;
+           }
+           .explore{
+            width: 80%; 
+            margin: auto;
+        }
+           
+           .explore p{
+               margin: 40px 0;
+             
+           }
+           
+           /*==tour and destination===*/
+           
+           .tour{
+               padding: 10px;
+           }
+           .tour h3{
+               margin: 0;
+           }
+           
+           .tour p{
+             margin: 30px 0; }
+           
+           .small{
+               height: 300px;
+               margin: 0 0 10px 0;
+           }
+           .large{ 
+               height: 350px;
+               margin: 0 0 10px 0;
+           }
+           /* footer*/
+           footer{
+               padding: 30px 10px;
+ }
+               .fab{
+                   font-size: 30px;
+                   margin: 7px;
+               }
+                  }
+           /* small laptop, squire monitor */
+   @media  only screen and  ( min-width:769px) and ( max-width:1024px){
+   
+    h1{font-size: 50px;
+    }
+    h2{font-size: 35px;
+    }
+    h3{
+        font-size: 25px;
+    
+    }
+    
+   }
+   @media  only screen and  ( min-width:1025px) and ( max-width:1440px){
+   
+    h1{font-size: 10px;
+    }
+   
+    
+   }  
